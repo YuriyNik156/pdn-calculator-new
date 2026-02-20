@@ -52,3 +52,81 @@
 **Доход** — введён вручную или получен по региону
 
 ---
+
+## Установка и запуск локально
+
+1. **Клонировать репозиторий**
+
+    ```bash
+    git clone https://github.com/ваш_ник/new-pdn-calculator.git
+    cd new-pdn-calculator
+    ```
+
+2. **Создать виртуальное окружение**
+
+```bash
+python -m venv venv
+```
+
+Активация:
+
+```bash
+venv\Scripts\activate       # Windows
+source venv/bin/activate    # Linux/macOS
+```
+
+3. **Установить зависимости**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Запуск проекта**
+
+```bash
+uvicorn main:app --reload
+```
+
+После запуска:
+
+```bash
+http://127.0.0.1:8000
+```
+
+---
+
+## Деплой
+
+**Проект поддерживает бесплатный деплой:**
+
+  * Render
+
+**Для деплоя используется:**
+    
+  * requirements.txt
+  * main.py (FastAPI entry point)
+  * uvicorn как ASGI-сервер
+
+---
+
+## Структура проекта
+
+```
+new-pdn-calculator/
+├── data/                                 # Данные парсинга
+│   ├── region_wages.json
+│   └── rosstat_data_regions.xlsx            
+├── static/                               # CSS и статические файлы
+│   └── style.css  
+├── templates/                            # HTML-шаблоны
+│   └── index.html
+├── api_service.py                        # Точка входа FastAPI
+├── debug_excel.py                        #
+├── main.py                               #
+├── pdn_calculator.py                     # 
+├── README.md                             # Документация
+└── requirements.txt                      # Зависимости проекта
+```
+
+---
+
