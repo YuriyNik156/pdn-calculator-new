@@ -113,17 +113,17 @@ http://127.0.0.1:8000
 
 ```
 new-pdn-calculator/
-├── data/                                 # Данные парсинга
+├── data/                                 # Данные парсинга и источники доходов
 │   ├── region_wages.json
 │   └── rosstat_data_regions.xlsx            
 ├── static/                               # CSS и статические файлы
 │   └── style.css  
 ├── templates/                            # HTML-шаблоны
 │   └── index.html
-├── api_service.py                        # Точка входа FastAPI
-├── debug_excel.py                        #
-├── main.py                               #
-├── pdn_calculator.py                     # 
+├── api_service.py                        # REST API (FastAPI-эндпоинт)
+├── debug_excel.py                        # Утилита для отладки структуры Excel Росстата
+├── main.py                               # Основное приложение FastAPI (веб + API + парсинг)
+├── pdn_calculator.py                     # Консольная версия калькулятора ПДН (прототип логики)
 ├── README.md                             # Документация
 └── requirements.txt                      # Зависимости проекта
 ```
@@ -162,11 +162,8 @@ new-pdn-calculator/
 
 ## Скриншоты
 
-**Список товаров**
-![Список товаров](screenshots/Список.jpg)
+**Скриншот загрузки сервера**
+![Скриншот загрузки сервера](screenshots/Скриншот загрузки сервера.png)
 
-**Добавление товара**
-![Добавление товара](screenshots/Добавление.png)
-
-**Админка**
-![Админка](screenshots/Админка.jpg)
+**Скриншот калькулятора**
+![Скриншот калькулятораа](screenshots/Скриншот калькулятора.png)
