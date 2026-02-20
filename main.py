@@ -51,7 +51,7 @@ def save_local(data: Dict[str, float]) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 def fetch_from_rosstat_html(url: str) -> Optional[Dict[str, float]]:
-    """Парсинг таблицы с Росстата (пример, подставь реальную ссылку позже)."""
+    """Парсинг таблицы с Росстата."""
     try:
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
