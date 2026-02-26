@@ -99,14 +99,12 @@ def load_regions_data() -> Dict[str, float]:
             # Названия колонок
             region_col = df.columns[0]  # 'Unnamed: 0'
 
-            # Попробуем найти июль, если он есть
             wage_col = None
             for c in df.columns:
                 if "июль" in str(c).lower():
                     wage_col = c
                     break
 
-            # Если нет колонки "июль" (вдруг изменится структура), берем последнюю
             if wage_col is None:
                 wage_col = df.columns[-1]
 

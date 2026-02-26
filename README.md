@@ -137,7 +137,6 @@ new-pdn-calculator/
 * fastapi — веб-фреймворк
 * uvicorn — ASGI-сервер
 * requests — HTTP-запросы
-* beautifulsoup4 — парсинг HTML
 * jinja2 — шаблоны
 
 Полный список — в requirements.txt.
