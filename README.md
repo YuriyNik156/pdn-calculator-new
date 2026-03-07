@@ -165,4 +165,14 @@ new-pdn-calculator/
 ![Скриншот загрузки сервера](screenshots/Сервер.png)
 
 **Скриншот калькулятора**
-![Скриншот калькулятораа](screenshots/Калькулятор.png)
+![Скриншот калькулятора](screenshots/Калькулятор.png)
+
+---
+
+## Demo
+
+**Live demo:**
+https://pdn-calculator-new.onrender.com/
+
+**Demo video:**
+https://youtu.be/w3cPbfZDvak
